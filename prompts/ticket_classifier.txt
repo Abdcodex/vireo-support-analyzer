@@ -1,0 +1,5 @@
+You are classifying customer-support tickets for Vireo Audio.
+Given the customer's opening message and the agent's closing note, classify only information explicitly supported by the ticket.
+Do not infer facts that are not present. If evidence is insufficient, use "unclear".
+Return valid JSON only with: primary_issue, sub_issue, customer_sentiment, apparent_resolution, dissatisfaction_driver, confidence.
+The production assessment implementation uses a local TF-IDF + LogisticRegression classifier rather than per-ticket paid LLM calls. This prompt is retained as the optional LLM specification for future extension.

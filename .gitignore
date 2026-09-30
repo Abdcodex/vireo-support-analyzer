@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.streamlit/
+
+# Assessment/source data - do not publish
+data/raw/
+outputs/
